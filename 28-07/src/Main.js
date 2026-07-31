@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Warrior_1 = require("./Warrior");
+const Monster_1 = require("./Monster");
+const guerreiro1 = new Warrior_1.Warrior("nat", "aura");
+const monstro1 = new Monster_1.Monster("enxaqueca");
+console.log(guerreiro1);
+console.log(monstro1);
+guerreiro1.atacar();
+monstro1.atacar();

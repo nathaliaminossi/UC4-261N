@@ -1,13 +1,13 @@
 
-export class monstro {
+export class Monster {
     private nome: string;
     private forca: number;
     private saude: number;
 
-    constructor(nome: string, forca: number, saude: number) {
+    public constructor(nome: string) {
         this.nome = nome;
-        this.forca = forca;
-        this.saude = saude;
+        this.forca = 50;
+        this.saude = 10;
 
     }
 
@@ -35,7 +35,7 @@ export class monstro {
         this.saude;
     }
 
-    atacar(): void {
+   public atacar(): void {
         console.log("o monstro atacou")
     }
 }

@@ -6,11 +6,11 @@ export class Warrior {
     private saude: number;
 
 
-    constructor(nome: string, tipo: string, forca: number, saude: number) {
+   public constructor(nome: string, tipo: string) {
         this.nome = nome;
         this.tipo = tipo;
-        this.forca = forca;
-        this.saude = saude;
+        this.forca = 40
+        this.saude = 100;
     }
 
     public getNome(): string {
@@ -43,16 +43,16 @@ export class Warrior {
         this.saude = saude;
     }
 
-    atacar(): void {
+   public atacar(): void {
         console.log("o guerreiro atacou")
     }
 
-    desviar(): void {
+  public  desviar(): void {
         console.log("o guerreiro desviou")
 
     }
 
-    curar(): void {
+   public curar(): void {
         console.log("o guerreiro curou")
     }
 
