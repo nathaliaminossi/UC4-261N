@@ -41,8 +41,13 @@ export class Car {
         this.year = year;
     }
 
-    public accelerate(): void {
-        console.log("o carro acelerou")
+    public accelerate(value:number): void {
+        if (this.speed < 0) {
+            throw new Error("A velocidade não pode ser negativa.");
+        }
+        return   console.log("o carro acelerou" + this.speed) ;
+
+      
     }
 
     public brake(): void {

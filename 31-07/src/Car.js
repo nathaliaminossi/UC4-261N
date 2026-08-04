@@ -36,8 +36,11 @@ class Car {
     setYear(year) {
         this.year = year;
     }
-    accelerate() {
-        console.log("o carro acelerou");
+    accelerate(value) {
+        if (this.speed < 0) {
+            throw new Error("A velocidade não pode ser negativa.");
+        }
+        return console.log("o carro acelerou" + this.speed);
     }
     brake() {
         console.log("o carro freiou");
