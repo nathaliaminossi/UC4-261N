@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Book_1 = require("./Book");
+const Movie_1 = require("./Movie");
 /*Exercicio 1
 const person1: Person = new Person("nat", 18);
 const person2: Person = new Person("arthur", 19)
@@ -34,8 +34,43 @@ produto1.addStock(10)
 produto1.removeStock(10)
 produto1.showProduct()
 */
-const livro1 = new Book_1.Book("A hora da estrela", "Clarice Lispector", 200, true);
-const livro2 = new Book_1.Book("Agua viva", "Clarice Lispector", 250, true);
-livro1.borrow();
-livro1.returnBook();
-livro1.showInformation();
+/**
+const livro1:Book = new Book("A hora da estrela", "Clarice Lispector", 200, true);
+const livro2:Book = new Book("Agua viva", "Clarice Lispector", 250, true);
+
+livro1.borrow()
+livro1.returnBook()
+livro1.showInformation()
+
+const estudante1: Student = new Student("nat", 10, 5);
+const estudante2: Student = new Student("isabelly", 0, 5);
+const estudante3: Student = new Student("tutui", 0, 0);
+
+estudante1.calculateAverage()
+estudante2.calculateAverage()
+estudante3.calculateAverage()
+
+
+const funcionario1: Employee = new Employee("Ana", 3000);
+const funcionario2:Employee = new Employee("julia", 4500);
+
+console.log("Antes do aumento:");
+funcionario1.mostrarInformaçao();
+funcionario2.mostrarInformaçao();
+
+funcionario1.aumentoDoSalario(10);
+funcionario2.aumentoDoSalario(5);
+
+console.log("Depois do aumento:");
+funcionario1.mostrarInformaçao();
+funcionario2.mostrarInformaçao();
+*/
+const filme1 = new Movie_1.Movie("Vingadores: Ultimato", 90, 9.0);
+const filme2 = new Movie_1.Movie("Toy Story", 90, 8.5);
+const filme3 = new Movie_1.Movie("Interestelar", 90, 10);
+filme1.classificacaoChange(9.5);
+filme2.classificacaoChange(8.8);
+filme3.classificacaoChange(9.9);
+filme1.showMovie();
+filme2.showMovie();
+filme3.showMovie();

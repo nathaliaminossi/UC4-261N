@@ -1,51 +1,43 @@
-export class Student{
-    name: string;
-    grade1: number;
-    grade2: number;
-
-    constructor(name:string, grade1: number, grade2:number){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Student = void 0;
+class Student {
+    name;
+    grade1;
+    grade2;
+    constructor(name, grade1, grade2) {
         this.name = name;
         this.grade1 = grade1;
         this.grade2 = grade2;
-
     }
-
-    public getName():string{
+    getName() {
         return this.name;
     }
-
-    public getGrade1():number{
+    getGrade1() {
         return this.grade1;
     }
-
-    public getGrade2(): number{
+    getGrade2() {
         return this.grade2;
     }
-
-    public setName(name:string){
+    setName(name) {
         this.name = name;
     }
-
-    public setGrade1(grade1: number){
+    setGrade1(grade1) {
         this.grade1 = grade1;
     }
-
-    public setGrade2(grade2:number){
+    setGrade2(grade2) {
         this.grade2 = grade2;
     }
-
-    public calculateAverage(): void {
+    calculateAverage() {
         const average = (this.grade1 + this.grade2) / 2;
-    
         if (average >= 7) {
             console.log("Você foi aprovado");
-        } else {
+        }
+        else {
             console.log("Você foi reprovado");
         }
     }
-
-    public approved(): void {
-
+    approved() {
     }
-
 }
+exports.Student = Student;

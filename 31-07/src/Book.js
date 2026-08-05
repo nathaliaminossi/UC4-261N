@@ -44,7 +44,7 @@ class Book {
         console.log("Livro emprestado com sucesso!");
     }
     returnBook() {
-        console.log("voce devolveu esse livro");
+        console.log("voce devolveu esse livro.");
     }
     showInformation() {
         console.log((`
