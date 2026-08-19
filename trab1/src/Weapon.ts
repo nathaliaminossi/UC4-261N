@@ -1,12 +1,12 @@
 export class Weapon {
 
     private name: string
-    private demage: number
+    private damage: number
 
 
-    public constructor(name: string, demage: number) {
+    public constructor(name: string, damage: number) {
         this.name = name;
-        this.demage = demage;
+        this.damage = damage;
 
     }
 
@@ -15,8 +15,8 @@ export class Weapon {
 
     }
 
-    public getDemage(): number {
-        return this.demage;
+    public getDamage(): number {
+        return this.damage;
     }
 
     public setName(name: string): void {
@@ -24,7 +24,7 @@ export class Weapon {
     }
 
     public setDemage(demage: number): void {
-        this.demage = demage;
+        this.damage = demage;
     }
 
 
@@ -32,7 +32,7 @@ export class Weapon {
     console.log((`
     Weapon
     Name: ${this.name}
-    Demage: ${this.demage}
+    Demage: ${this.damage}
     `))
     }
 }

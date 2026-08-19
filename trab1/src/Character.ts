@@ -9,16 +9,16 @@ export class Character {
         this.health = health
     }
 
-    public getName(): string{
+    public getName(): string {
         return this.name;
 
     }
 
-    public getLevel(): number{
+    public getLevel(): number {
         return this.level;
     }
 
-    public getHealth(): number{
+    public getHealth(): number {
         return this.health;
     }
 
@@ -26,15 +26,15 @@ export class Character {
         this.name = name;
     }
 
-    public setLevel(level: number): void{
+    public setLevel(level: number): void {
         this.level = level;
     }
 
-    public setHealth(health: number){
+    public setHealth(health: number) {
         this.health = health;
     }
 
-    public showInfo(): void{
+    public showInfo(): void {
         console.log((`
         Character
         Name: ${this.name}
@@ -43,9 +43,12 @@ export class Character {
         `))
     }
 
-    public takeDamage(amount: number): void{
-        if(this.health < 0){
-            console.log("")
+    public takeDamage(amount: number): void {
+        this.health -= amount;
+
+        if (this.health < 0) {
+            this.health = 0;
         }
+
     }
 }

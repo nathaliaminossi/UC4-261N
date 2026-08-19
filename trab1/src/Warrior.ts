@@ -28,11 +28,12 @@ public setWeapon(weapon: Weapon): void{
 }
 
 
-public attack(): void{
-    console.log((`
-    Aragorn attacks with Longsword!
-    Damage: ${this.takeDamage}
-    `))
-}
+  public attack(): void {
+        console.log(`${this.getName()} attacks with ${this.weapon.getName()}!`);
+
+        // dano da arma 
+        console.log(`Damage: ${this.weapon.getDamage()}`);
+    }
+
 
 }
