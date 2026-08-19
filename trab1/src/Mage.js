@@ -21,16 +21,16 @@ class Mage extends Character_1.Character {
         this.mana = mana;
     }
     castSpell() {
-        // Verifica se a mana do mago é menor que o custo da magia
+        // mana cost = custo de magia 
         if (this.mana < this.spell.getManaCost()) {
-            // Se não tiver mana suficiente, mostra essa mensagem
             console.log(`${this.getName()} does not have enough mana!`);
             return;
         }
+        //spell = feitiço
         console.log(`${this.getName()} casts ${this.spell.getName()}!`);
         //  dano 
         console.log(`Damage: ${this.spell.getDamage()}`);
-        // Diminui da mana do mago o custo da magia
+        // mana do mago - custo da magia
         this.mana -= this.spell.getManaCost();
         console.log(`Mana remaining: ${this.mana}`);
     }

@@ -29,7 +29,7 @@ export class Weapon {
 
 
     public showInfo(): void {
-    console.log((`
+        console.log((`
     Weapon
     Name: ${this.name}
     Demage: ${this.damage}

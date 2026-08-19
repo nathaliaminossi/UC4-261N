@@ -15,6 +15,7 @@ class Party {
     addMember(member) {
         this.members.push(member);
     }
+    // procura verifica  remove
     removeMember(member) {
         const index = this.members.indexOf(member);
         if (index !== -1) {

@@ -22,6 +22,7 @@ export class Party {
         this.members.push(member);
     }
 
+    // procura verifica  remove
     public removeMember(member: Character): void {
         const index = this.members.indexOf(member);
         if (index !== -1) {
@@ -29,14 +30,14 @@ export class Party {
         }
 
     }
+
     public showMembers(): void {
-    // party
-    console.log(this.name);
+        // party
+        console.log(this.name);
 
-    for (const member of this.members) {
-
-        console.log(`${member.getName()} - Level ${member.getLevel()}`);
-    }
+        for (const member of this.members) {
+            console.log(`${member.getName()} - Level ${member.getLevel()}`);
+        }
 
     }
 

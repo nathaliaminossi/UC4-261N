@@ -22,7 +22,7 @@ class Warrior extends Character_1.Character {
     }
     attack() {
         console.log(`${this.getName()} attacks with ${this.weapon.getName()}!`);
-        // dano da arma 
+        // dano  
         console.log(`Damage: ${this.weapon.getDamage()}`);
     }
 }

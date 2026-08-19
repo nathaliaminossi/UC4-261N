@@ -11,7 +11,6 @@ export class Character {
 
     public getName(): string {
         return this.name;
-
     }
 
     public getLevel(): number {
@@ -42,6 +41,7 @@ export class Character {
         Health: ${this.health}
         `))
     }
+
 
     public takeDamage(amount: number): void {
         this.health -= amount;

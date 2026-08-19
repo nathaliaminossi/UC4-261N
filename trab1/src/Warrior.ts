@@ -31,7 +31,7 @@ public setWeapon(weapon: Weapon): void{
   public attack(): void {
         console.log(`${this.getName()} attacks with ${this.weapon.getName()}!`);
 
-        // dano da arma 
+        // dano  
         console.log(`Damage: ${this.weapon.getDamage()}`);
     }
 
