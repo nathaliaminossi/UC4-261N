@@ -1,4 +1,4 @@
-interface Donatable{
+export interface Donatable{
  donate(quantity: number): void ;
 
 }

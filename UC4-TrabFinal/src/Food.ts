@@ -1,3 +1,5 @@
+import { Donatable } from "./Interface/Donatable";
+
 export class Food implements Donatable {
     private name: string;
     private category: string;
@@ -56,7 +58,7 @@ export class Food implements Donatable {
 
         this.amountKg -= quantity;
         return true;
-    }
+    } 
 
     public getAvailableQuantity(): number {
         return this.amountKg;
