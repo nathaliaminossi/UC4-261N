@@ -32,19 +32,25 @@ class Food {
     setResponsibleProducer(responsibleProducer) {
         this.responsibleProducer = responsibleProducer;
     }
+    // adiciona uma quantidade ao estoque
     addQuantity(quantity) {
         this.amountKg += quantity;
     }
+    // remove uma quantidade do estoque
     removeQuantity(quantity) {
+        // verifica se existe quantidade suficiente
         if (quantity > this.amountKg) {
             return false;
         }
+        // diminui a quantidade disponível
         this.amountKg -= quantity;
         return true;
     }
+    // retorna a quantidade disponível
     getAvailableQuantity() {
         return this.amountKg;
     }
+    // realiza a doação de uma quantidade
     donate(quantity) {
         this.removeQuantity(quantity);
     }
